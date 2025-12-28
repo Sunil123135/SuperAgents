@@ -1,0 +1,27 @@
+mcp_servers:
+  # - id: math
+  #   script: mcp_server_1.py
+  #   cwd: I:/TSAI/2025/EAG/Session 15/S15A/mcp_servers
+  #   transport: stdio
+  #   description: "Most used Math tools, including special string-int conversions, fibonacci, python sandbox, shell and sql related tools"
+  - id: documents
+    script: mcp_server_2.py
+    cwd: C:\Users\slalwani\OneDrive - QuidelOrtho\SUNIL\EAG\Session 15\mcp_servers
+    transport: stdio
+    description: "Load, search and extract within webpages, local PDFs or other documents. Web and document specialist"
+  - id: websearch
+    script: mcp_server_3.py
+    cwd: C:\Users\slalwani\OneDrive - QuidelOrtho\SUNIL\EAG\Session 15\mcp_servers
+    transport: stdio
+    description: "Webtools to search internet for queries and fetch content for a specific web page"
+# Temporarily disabled because the SSE proxy target at https://localhost:8002/sse
+# has no upstream service running (proxy error). Re-enable when the browser
+# server is up (update TARGET/port in https-proxy.js as needed).
+#  - id: webbrowsing
+#    script: https://localhost:8002/sse  # HTTPS SSE proxy target
+#    transport: sse
+#    description: "Full Browser Access (persistent) via HTTPS proxy"
+  # - id: mixed
+  #   script: mcp_server_4.py
+  #   cwd: I:/TSAI/2025/EAG/Session 15/S15A/mcp_servers
+  #   description: "Most used Math tools"

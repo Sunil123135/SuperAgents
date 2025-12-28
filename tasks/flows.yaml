@@ -1,0 +1,33 @@
+flows:
+  - id: wiki_extract
+    prompt: >
+      Open Wikipedia. Search for "Supply chain". Open the article.
+      Copy the first paragraph and save it to outputs/wiki_supply_chain.txt.
+      Then summarize it in 5 bullet points and save to outputs/wiki_summary.json.
+    evidence:
+      - file: outputs/wiki_supply_chain.txt
+      - file: outputs/wiki_summary.json
+
+  - id: maps_route
+    prompt: >
+      Open Google Maps. Get driving directions from Hyderabad to Bangalore.
+      Extract distance and ETA and save to outputs/maps_route.json.
+    evidence:
+      - file: outputs/maps_route.json
+
+  - id: yt_metadata
+    prompt: >
+      Open YouTube. Search for "inventory optimization tutorial".
+      Open the top result. Extract title, channel, duration.
+      Save to outputs/youtube_top_result.csv.
+    evidence:
+      - file: outputs/youtube_top_result.csv
+
+  - id: ppt_edit
+    prompt: >
+      Open the PowerPoint deck at C:\Users\slalwani\OneDrive - QuidelOrtho\SUNIL\EAG\Session 13\Code\temp\deck.pptx
+      Standardize title font to Calibri 32 on all slides, add slide numbers,
+      export to outputs/deck.pdf, and save updated deck to outputs/deck_updated.pptx.
+    evidence:
+      - file: outputs/deck.pdf
+      - file: outputs/deck_updated.pptx

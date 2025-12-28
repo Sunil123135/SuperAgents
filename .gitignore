@@ -1,0 +1,24 @@
+# Dependencies and virtualenv
+node_modules/
+.venv/
+
+# Environment / secrets
+.env
+
+# Editor / tooling
+.cursor/
+.DS_Store
+Thumbs.db
+
+# Logs and runs
+runlog*.txt
+runs/
+outputs/
+
+# Certificates/keys
+cert.pem
+key.pem
+
+# Misc
+*.pyc
+__pycache__/
